@@ -9,6 +9,10 @@ from app.db import get_session
 
 app = FastAPI(title="Тестовое задание ITK Academy")
 
+@app.get("/health")
+async def health():
+    return {"status": "ok"}
+
 
 @app.post(
     "/api/v1/wallets/{wallet_id}/operation",

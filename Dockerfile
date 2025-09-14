@@ -4,7 +4,7 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # install system dependencies for asyncpg
-RUN apt-get update && apt-get install -y build-essential gcc libpq-dev \
+RUN apt-get update && apt-get install -y build-essential gcc libpq-dev curl \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
