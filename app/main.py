@@ -6,6 +6,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app import crud, schemas
 from app.db import get_session
 
+
 app = FastAPI(title="Тестовое задание ITK Academy")
 
 
