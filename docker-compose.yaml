@@ -48,5 +48,18 @@ services:
     restart: unless-stopped
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 
+  tests:
+    build: .
+    container_name: wallets_tests
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    command: pytest -v
+    restart: "no"
+
 volumes:
   pgdata:

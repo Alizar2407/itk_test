@@ -51,5 +51,5 @@ docker-compose up --build
 
 Тесты можно выполнить с помощью следующей команды:
 ```shell
-pytest -v
+docker-compose up --build tests
 ```

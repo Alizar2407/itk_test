@@ -4,7 +4,6 @@ SQLAlchemy
 asyncpg
 alembic
 pydantic
-httpx
+requests
 pytest
-pytest-asyncio
 python-dotenv

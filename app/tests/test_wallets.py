@@ -1,7 +1,7 @@
 import uuid
 import requests
 
-BASE_URL = "http://localhost:8000/api/v1/wallets"
+BASE_URL = "http://app:8000/api/v1/wallets"
 
 
 def test_deposit_and_get_wallet():
