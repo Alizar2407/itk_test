@@ -5,5 +5,7 @@ asyncpg
 alembic
 pydantic
 requests
+httpx
 pytest
+pytest-asyncio
 python-dotenv

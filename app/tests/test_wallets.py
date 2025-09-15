@@ -1,6 +1,7 @@
 import uuid
 import requests
 
+
 BASE_URL = "http://app:8000/api/v1/wallets"
 
 
