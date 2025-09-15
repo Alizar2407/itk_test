@@ -35,11 +35,12 @@
 # Реализация
 
 Был выбран следующий стек:
-- **FastAPI** - REST API
-- **PostgreSQL** - в качестве БД
-- **Alembic** - для миграций
-- **Docker-compose** - развертывание приложения
+- **FastAPI** - основное REST API приложение
+- **PostgreSQL** - БД для хранения данных о кошельках
+- **Alembic** - миграции
+- **Docker-compose** - запуск всех частей приложения
 
+### Запуск приложения
 Для запуска достаточно склонировать репозиторий и выполнить команду `docker-compose up`:
 ```shell
 git clone https://github.com/Alizar2407/itk_test
@@ -49,7 +50,14 @@ docker-compose up --build
 
 Приложение будет доступно по адресу *http://localhost:8000/docs*
 
+### Тесты
 Тесты можно выполнить с помощью следующей команды:
 ```shell
 docker-compose up --build tests
+```
+
+### Очистка
+Для удаления созданных контейнеров можно использовать команду:
+```shell
+docker-compose down -v
 ```
